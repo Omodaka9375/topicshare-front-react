@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="TopicShare">
+  <link rel="icon" href="img/twitter-bounty-icon-32.png">
+  <title>TopicShare.io</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/twitterbounty.css" rel="stylesheet">
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <p class="text-white">
+              <h3 style="color: white;">Who is TopicShare.io for?</h3>
+              <p class="text-white">
+              </p>
+              <p class="text-white"><b>TopicShare.io</b> is an organic blockchain marketing dApp for everyone!
+                <br />
+                <h5 style="color: white;background-color: #565384; padding: 10px;">Creators</h5>
+                <span style="color:white">
+                  Anyone with an idea, app, book, game, website or any product, who wants to harness the power of social media community in organic way. 
+                  Rather than paying for ads, TopicShare helps by letting other people share your product via their networks. 
+                  For their efforts, you can reward them automatically.
+                  <br /><br />
+                  <h5 style="color: white;background-color: #565384; padding: 10px;">Posters</h5>
+                  <p>If you want to help an idea or a product, share it with connections in your network, and earn Ethereum for it, this is the right place for you.</p>
+                  <br />
+                  <h5 style="color: white;background-color: #565384; padding: 10px;">How much it costs?</h5>
+                  <p>For campaign creators - it costs <span class="gas-price-ui" style="color: greenyellow"><b>1 Ether</b></span> to start a new campaign.</p>
+                  <p>For posters - it's <span style="color: greenyellow"><b>free</b></span>.</p>
+                  <p style="font-size: smaller">* transaction gas fee not included</p>
+                </span>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <ul class="list-unstyled">
+              <h5 class="text-white"
+                style="padding-top: 10px; background-color: #565384; padding: 10px;margin-top: 20px; text-align: right;">
+                Powered by</h5>
+              <a href="https://www.ethereum.org/"><img src="../img/eth.png" width="10%"
+                  style="float: right;padding-top: 5px;" alt="Ethereum"></a>
+              <a href="https://metamask.io/"><img src="../img/metamask.png" width="15%" style="float: right;"
+                  alt="Metamask"></a>
+              <a href="https://infura.io/"><img src="../img/infura.png" width="15%" style="float: right;"
+                  alt="Infura"></a>
+              <a href="https://oraclize.it/"><img src="../img/oraclize.png" width="15%" style="float: right;"
+                  alt="Oraclize"></a>
+              <br />
+
+              <br /> <br />
+              <p class="text-white" style="font-size: smaller"> <span style="color:greenyellow;"><b>Disclaimer:
+              </b></span> TopicShare.io is in beta!</p>
+              <h5 class="text-white" style="padding-top: 10px; background-color: #565384; padding: 10px;margin-top: 20px; text-align: right;">
+                Links</h5>
+                <li>
+                    <a href="#" class="how-to-work" style="color: greenyellow">How it works?</a>
+                </li>
+              <li>
+                <a href="#" class="how-to-create" style="color: greenyellow">How to start a campaign?</a>
+              </li>
+              <li>
+                <a href="#" class="how-to-edit" style="color: greenyellow">How to edit a campaign?</a>
+              </li>
+              <li>
+                <a href="#" class="how-to-claim" style="color: greenyellow">How to claim a reward?</a>
+              </li>
+              <li>
+                <a href="#" class="how-to-fees" style="color: greenyellow">What are the fees?</a>
+              </li>
+              <hr style="color: white">
+              <li>
+                <a href="#" class="text-white dev-log">Development Log</a>
+              </li>
+              <li>
+                <a href="#" class="text-white privacy-policy">Privacy Policy</a><hr>
+              </li>
+              <li>
+                <a href="https://twitter.com/topicshare" class="text-white">@TopicShare</a>
+              </li>
+              <li>
+                <a href="mailto:info@topicshare.io" class="text-white">Email us</a>
+              </li>
+              <li><br /><h4 class="status-check" style="color:red">Owner tools:</h4>
+                <P class="status" style="color: greenyellow"></p><br /><hr>
+                  <a href="#" class="text-white get-price">Get Price</a><br /><hr>
+                  <a href="#" class="text-white update-price">Update Price</a><input type="text" class="form-control" id="updated-price" placeholder="ETH"> <br /><hr>
+                  <a href="#" class="text-white owner-close">Close campaign</a><input type="text" class="form-control" id="owner-close" placeholder="Campaign ID"> <br /><hr>
+                  <a href="#" class="text-white pause">Pause contract</a> <br /><hr>
+                  <a href="#" class="text-white unpause">Unpause contract</a> <br /><hr>
+                  <a href="#" class="text-white destroy">Destroy contract</a> 
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="https://www.topicshare.io" class="navbar-brand d-flex align-items-center">
+          <img src="./img/twitter-bounty-icon-512.png" height="80" class="logo-image">
+        </a>
+        <div class="text-white col-md-6">
+          <span style="color: greenyellow;">Your Account:</span>
+          <span id="current-account-address"></span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader"
+          aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main role="main">
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h2 class="jumbotron-heading"><b>Harness the power of the community! </b></h2>
+        <h3 class="jumbotron-heading"><b>Help spread the word!</b></h3>
+        <br />
+        <p class="lead text-muted">Start by pasting a link to a tweet, like below</p>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">URL</span>
+          </div>
+          <input type="text" class="form-control"
+            placeholder="e.g. https://twitter.com/topicshare/status/1100603141198888961" id="twitter-url">
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button" id="submit-oracle">Submit</button>
+          </div>
+        </div>
+        <div id="output-container">
+          <div id="message-output-container" class="collapse">
+            <div class="alert alert-secondary" id="message-output"></div>
+          </div>
+          <div id="tweet-output" class="collapse">
+            <blockquote class="quote-card grey-card">
+              <p id="tweet-oracle-text">
+              </p>
+            </blockquote>
+            <div id="next-steps">
+              <button type="button" class="btn btn-primary" id="create-bounty-jumbo">Create campaign</button>
+              <button type="button" class="btn btn-success" id="fulfill-bounty-jumbo">Claim reward</button>
+              <br />
+              <br />
+              <div id="create-bounty-input" class="collapse">
+                <h4>Create your campaign</h4>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Min. followers for posters</span>
+                  </div>
+                  <select id="followers-dropdown" class="form-control">
+                    <option selected>200</option>
+                    <option value="500">500</option>
+                    <option value="1000">1000</option>
+                    <option value="5000">5000</option>
+                    <option value="10000">10000</option>
+                    <option value="50000">50000</option>
+                    <option value="100000">100000</option>
+                    <option value="1000000">1000000</option>
+                  </select>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Topic</span>
+                  </div>
+                  <select class="form-control" id="topic-input">
+                    <option selected>Misc</option>
+                    <option value="Accessories">Accessories</option>
+                    <option value="AI">AI</option>
+                    <option value="Art">Art</option>
+                    <option value="Beauty">Beauty</option>
+                    <option value="Blockchain">Blockchain</option>
+                    <option value="Books">Books</option>
+                    <option value="Bussines">Bussines</option>
+                    <option value="Charity">Charity</option>
+                    <option value="Crafts">Crafts</option>
+                    <option value="Crypto">Crypto</option>
+                    <option value="DApps">DApps</option>
+                    <option value="DIY">DIY</option>
+                    <option value="Entertainment">Entertainment</option>
+                    <option value="Esports">Esports</option>
+                    <option value="Fashion">Fashion</option>
+                    <option value="Food">Food</option>
+                    <option value="Gaming">Gaming</option>
+                    <option value="Gifts">Gifts</option>
+                    <option value="Home">Home</option>
+                    <option value="Health">Health</option>
+                    <option value="Humanities">Humanities</option>
+                    <option value="ICO">ICO</option>
+                    <option value="Memes">Memes</option>
+                    <option value="Music">Music</option>
+                    <option value="News">News</option>
+                    <option value="Pets">Pets</option>
+                    <option value="Photography">Photography</option>
+                    <option value="Science">Science</option>
+                    <option value="Software">Software</option>
+                    <option value="Sport">Sport</option>
+                    <option value="Startup">Startup</option>
+                    <option value="Tech">Tech</option>
+                    <option value="Tourism">Tourism</option>
+                    <option value="Toys">Toys</option>
+                    <option value="Travel">Travel</option>
+                    <option value="Video">Video</option>
+                  </select>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Reward per share</span>
+                  </div>
+                  <input type="text" class="form-control" id="fulfillment-amount-input" placeholder="ETH">
+
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Total budget</span>
+                  </div>
+                  <input type="text" class="form-control" id="initial-balance-input" placeholder="ETH">
+
+                </div>
+                <br />
+                <button type="button" class="btn btn-outline-primary" id="submit-twitter-bounty">Create</button>
+              </div>
+              <div id="fulfill-bounty-input" class="collapse">
+                <h4>Claim your reward</h4>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">Campaign ID:</span>
+                  </div>
+                  <select class="custom-select" id="fulfill-bountyid-input">
+                    <option selected>Choose...</option>
+                  </select>
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="fulfill-bountyid-message"></span>
+                  </div>
+                  <div class="input-group-append">
+                    <button type="button" class="btn btn-outline-secondary" id="fulfill-twitter-bounty"
+                      disabled>Claim</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="tutorial">
+
+      <div class="create">
+        <h3  class="jumbotron-heading">How to start a campaign</h3>
+          <br />
+          <h4  class="jumbotron-heading">1) Open/install MetaMask add-on and connect your account</h4>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide1.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">2) Start by submitting your chosen tweet to be oraclized</h4>
+          <h6  class="jumbotron-heading">e.g. `https://twitter.com/topicshare/status/1100603141198888961`</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide2.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">3) It will take a little while for the oracle to retrieve the tweet</h4>
+          <h6  class="jumbotron-heading">You should see a "Checking tweet..." in the meantime</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide3.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">4) Wait until the oracle sucessfully stores the tweet</h4>
+          <h6  class="jumbotron-heading">You should see the option to "Create campaign" or "Claim a reward"</h6>
+          <h6  class="jumbotron-heading">Click on "Create campaign" button</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide4.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">5) You will be prompted to pay the initialization fee of <span class="gas-price-ui"> 1 Ether</span></h4>
+          <h6 class="jumbotron-heading">After the transaction is confirmed, you should see all campaign details to fill in</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide5.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">6) Fill in the blanks</h4>
+          <h6 class="jumbotron-heading">Put minimum amount of followers that you request your posters to have, topic, reward amount and total campaign budget</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide6.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">7) Now press "Create"</h4>
+          <h6 class="jumbotron-heading">This should initiate another MetaMask transaction to transfer the budget to the campaign</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide7.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">8) Once the campaign is created, you will see it listed among other active campaigns</h4>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide16.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading" style="color: red">Known issues</h4>
+          <h6 class="jumbotron-heading">Sometimes the Oraclize process succeeds, but the resulting text is empty :( </h6>
+          <h6 class="jumbotron-heading">To the contract, an empty string is the same as if the tweet was never oraclized</h6>
+          <h6 class="jumbotron-heading">The page will timeout with an error message "Something went wrong with oraclizing this tweet"</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/error.png" style="width: 50%"/>
+
+      </div>
+      <div class="claim">
+        <h3  class="jumbotron-heading">How to claim a reward</h3>
+          <br />
+          <h4  class="jumbotron-heading">1) How about earning a reward?</h4>
+          <h6  class="jumbotron-heading">It's easy. Click on the text of the campaign to copy it to the clipboard and go post it on Twitter</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide9.png" style="width: 50%"/>
+          <br /><br /><hr><br />
+          <h4 class="jumbotron-heading">2) Now let's claim a reward for our post. </h4>
+          <h6  class="jumbotron-heading"> Copy your tweet url. Submit this link to be oraclized, e.g. `https://twitter.com/topicshare/status/1100603141198888961`</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide12.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">3) After the tweet is oraclized, press "Claim reward" and select "Campaign ID"</h4>
+          <h6  class="jumbotron-heading">This should initiate another MetaMask transaction that will confirm your follower count, as requested per campaign</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide15.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">4) f all conditions are met you will see "Claim" option enabled in green color</h4>
+          <h6  class="jumbotron-heading">Click on it and there will be a success message saying that you have been rewarded</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide22.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading">5) If you look at the campaign again, you will see that the "Campaign Budget" has been reduced by the reward amount</h4>
+          <br />
+          <img src="./img/topicshare-tut-img/Slide8.png" style="width: 50%"/>
+
+          <br /><br /><hr><br />
+          <h4  class="jumbotron-heading" style="color: red">Known issues</h4>
+          <h6 class="jumbotron-heading">If you don't have enough followers, as requested per campaign, you will see "Not enough followers!" message</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/error2.png" style="width: 50%"/>
+          <br /><br /><br />
+          <h6 class="jumbotron-heading">If you already claimed the tweet or the text is not matching, you will see "This tweet won't work..." message and disabled "Claim" button</h6>
+          <br />
+          <img src="./img/topicshare-tut-img/error3.png" style="width: 50%"/>
+      </div>
+      <div class="edit">
+        <h3  class="jumbotron-heading">How to edit a campaign</h3>
+        <br />
+        <h4  class="jumbotron-heading">1) You created a campaign, now what?</h4>
+        <h6  class="jumbotron-heading">If you want to edit the reward amount per share, click on "Edit" button and confirm transaction</h6>
+        <br />
+        <img src="./img/topicshare-tut-img/Slide17.png" style="width: 50%"/>
+        <br /><br /><hr><br />
+        <h4 class="jumbotron-heading">2) Now let's add some more ETH to keep our campaign running</h4>
+        <h6  class="jumbotron-heading">Click on "Contribute" button, put in your contribution amount and confirm transaction</h6>
+        <br />
+        <img src="./img/topicshare-tut-img/Slide18.png" style="width: 50%"/>
+        <br /><br /><hr><br />
+        <h4  class="jumbotron-heading">3) Now let's see how to close a campaign</h4>
+        <h6  class="jumbotron-heading">Click on the close button and confirm transaction. In a moment you should see that campaign has been closed</h6>
+        <br />
+        <img src="./img/topicshare-tut-img/Slide21.png" style="width: 50%"/>
+      </div>
+      <div class="fees">
+        <h3  class="jumbotron-heading">What are the transaction fees applied?</h3>
+        <br />
+        <h5  class="jumbotron-heading" style="padding-left: 20%; padding-right: 20%">Ethereum blockchain eco-system functions on gas (ETH). Gas is the price of an transaction on Ethereum blockchain.
+        User that requests a transaction is paying the gas fee for this transaction to be included in the next block that miners are mining on the network.
+        TopicShare contracts provide their functionality through another service called <a href="http://www.oraclize.it/">Oraclize.it</a>.
+        Oraclize uses transactions to deliver "outer-world" information to our contract on Ethereum blockchain, where it's being stored.
+        TopicShare contracts need Ether provided by users to continue running.</h5>
+        <br />
+        <hr>
+        <br />
+        <h4  class="jumbotron-heading">Here is the list of transactions that provide functionality and require gas: </h4>
+        <br />
+        <div style="text-align: right; padding-right: 35%" >
+          <ul>
+            <li>Submit a tweet to be checked - invokes gas + Oraclize fee, <i>e.g. ~ $0.03</i></li>
+            <li>Check followers - invokes gas + Oraclize fee, <i>e.g. ~ $0.03</i></li>
+            <li>Claim a reward - invokes gas,<i>e.g. ~ $0.02</i> </li>
+            <li>Initialize a campaign - invokes gas + user fee for campaign creation feature, <i>e.g. ~ $0.02</i></li>
+            <li>Create a campaign - invokes gas + user defined campaign budget, <i>e.g. ~ $0.03</i></li>
+            <li>Edit reward amount on a campaign - invokes gas, <i>e.g. ~ $0.01</i></li>
+            <li>Contribute to a campaign - invokes gas + contribution amount to be transfered, <i>e.g. ~ $0.01</i></li>
+            <li>Close a campaign - invokes gas, <i>e.g. ~ $0.01</i></li>
+          </ul>
+        </div>
+        <br />
+        <hr>
+        <div class="oraclize-pricing">
+          <br />
+          <h4 class="jumbotron-heading">Oraclize pricing table </h4>
+          <br />
+         <img src="./img/oraclize-pricing.png" />
+        </div>
+      </div>
+      <div class="privacy">
+        <h4  class="jumbotron-heading">Privacy Policy</h4><br /><hr>
+        <h6  class="jumbotron-heading">Last modified, 02/27/2019</h6>
+        <br /><br />
+        <h4  class="jumbotron-heading">coming soon...</h4>
+      </div>    
+      <div class="work" style="padding-left: 20%; padding-right: 20%;">
+          <h3  class="jumbotron-heading">How it works?</h3><br />
+          <h4  class="jumbotron-heading"># <a href="https://rinkeby.etherscan.io/address/0xEb514d55358dA687AfA975f00D41880c5c474D7e">TopicShareOracle.sol</a></h4><br />
+          <h6  class="jumbotron-heading">The TopicShare's Oracle smart contract uses <a href="http://www.oraclize.it/">oraclize.it</a>'s
+              `oraclize-api` library to retrieve the message text of posts on Twitter via URL. 
+              These messages are stored on the Ethereum blockchain within this smart contract and is publicly accessible by any other smart contract.</h6>
+              <br />
+          <h6  class="jumbotron-heading">
+            Any user can call this contract to store a new Twitter message. 
+            Storing the data from Oraclize callback requires that this contract also has balance of Ether to function, and anyone can contribute Ether to keep the oracle running.</h6>
+              <br /><hr>
+              <br />
+          <h4  class="jumbotron-heading"># <a href="https://rinkeby.etherscan.io/address/0x599c6A804549208ae074e8eE29c2e177C16593A8">TopicShareBounty.sol</a></h4><br />
+          <h6  class="jumbotron-heading">The main TopicShare smart contract is similar to Bounties Network's <a href="https://github.com/Bounties-Network/StandardBounties"> StandardBounties.sol</a>. 
+            Using the data on the TopicShare Oracle smart contract, users are able to open new campaign or claim fulfillment rewards on existing ones.
+          </h6>
+              <br />
+          <h6  class="jumbotron-heading">
+              Completing a campaign requires that user proves that new tweet has not been used in the past and that it contains
+              the same text as the original Twitter post for the campaign.
+              Because this proof can be done programmatically, campaign verification and reward resolution can happen all at once, and without the need of the campaign 
+              creator to verify or accept fulfillments.</h6>
+              <br />
+          <h6  class="jumbotron-heading">
+              Campaign creators have control over their campaigns and can edit the fulfillment rewards or close already opened campaigns.. 
+              Anyone can contribute to existing campaign to continue funding them and encourage others to keep fulfilling the campaign.</h6>
+              <br /><hr>
+              <br />
+          <h4  class="jumbotron-heading"># How is this useful?</h4><br />
+          <h6  class="jumbotron-heading">
+              Topicshare.io enables a decentralized and simple way for people to advertise or spread messages in an organic way. 
+              Imagine that you just released a new product and you want others to spread word about your product. 
+              Rather than paying for an ad, you can harness the power of social media community to share your product via their networks. 
+              For their efforts, you can reward them automatically, using this campaign system.</h6>
+
+        </div> 
+        <div class="devlog" style="padding-left: 30%; padding-right: 30%; ">
+          <h4  class="jumbotron-heading">Event and updates log</h4><br /><hr><br />
+          <h6  class="jumbotron-heading" style="text-align: left; font-size: large"><b>Added, 02/27/2019: Topicshare.io is live on Rinkeby.</b></h6>
+          <br /><hr><br />
+        </div>
+      <br />
+      <br />
+      <p>Experiencing issues? Have suggestions? Send your feedback<a href="mailto:info@topicshare.io" class="go-back"> this</a> way.</p><br /><br />
+      <br />
+       <a href="#" class="go-back"> < Back</a><br /><br />
+    </div>
+    <div class="filter-menu">
+      Filter by Topic :
+      <select id="topic-selector">
+        <option value="Latest" selected="Latest">Latest</option>
+        <option value="Accessories">Accessories</option>
+        <option value="AI">AI</option>
+        <option value="Art">Art</option>
+        <option value="Beauty">Beauty</option>
+        <option value="Blockchain">Blockchain</option>
+        <option value="Books">Books</option>
+        <option value="Bussines">Bussines</option>
+        <option value="Charity">Charity</option>
+        <option value="Crafts">Crafts</option>
+        <option value="Crypto">Crypto</option>
+        <option value="DApps">DApps</option>
+        <option value="DIY">DIY</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="Esports">Esports</option>
+        <option value="Fashion">Fashion</option>
+        <option value="Food">Food</option>
+        <option value="Gaming">Gaming</option>
+        <option value="Gifts">Gifts</option>
+        <option value="Home">Home</option>
+        <option value="Health">Health</option>
+        <option value="Humanities">Humanities</option>
+        <option value="ICO">ICO</option>
+        <option value="Memes">Memes</option>
+        <option value="Misc">Misc</option>
+        <option value="Music">Music</option>
+        <option value="News">News</option>
+        <option value="Pets">Pets</option>
+        <option value="Photography">Photography</option>
+        <option value="Science">Science</option>
+        <option value="Software">Software</option>
+        <option value="Sport">Sport</option>
+        <option value="Startup">Startup</option>
+        <option value="Tech">Tech</option>
+        <option value="Tourism">Tourism</option>
+        <option value="Toys">Toys</option>
+        <option value="Travel">Travel</option>
+        <option value="Video">Video</option>
+      </select>
+    </div>
+    <div class="py-5 bg-light">
+      <div class="container">
+
+        <div class="card-columns" id="bountyRow">
+
+        </div>
+
+      </div>
+    </div>
+
+    <div id="bountyTemplate" style="display: none;">
+      <div class="bounty-card">
+        <div class="card mb-4 box-shadow">
+          <div class="card-header">Campaign Id:
+            <span class="bounty-number"></span>
+            <span class="bounty-topic"></span>
+          </div>
+          <div class="card-body">
+            <blockquote class="quote-card quote-card-small grey-card">
+              <p class="bounty-text"></p>
+            </blockquote>
+            <h6 class="card-subtitle mb-2 text-muted">
+              <span>Created by:</span>
+              <span class="bounty-issuer" data-id="-1">campaign issuer</span>
+            </h6>
+            <span class="bounty-claims-holder"
+              style="background-image: url('./img/priceTag.png'); float:right; width:80px; height:80px; color: white;background-repeat: round; text-align: center; margin-right: 20px;"
+              data-id="-1">
+              <strong>
+                <p class="bounty-claims" style="margin-top:27px;" data-id="-1">
+                </p>
+              </strong>
+              <p style="color: black; padding-top: 10px">claimed</p>
+            </span>
+            <p class="fulfillment-followers-group" data-id="-1">
+              <strong>Minimum followers: </strong>
+              <span class="fulfillment-followers" data-id="-1"></span>
+            </p>
+            <p class="fulfillment-amount-group" data-id="-1">
+              <strong>Reward per share: </strong>
+              <span class="fulfillment-amount" data-id="-1"></span>
+              <span> ETH</span>
+            </p>
+            <p class="bounty-balance-group" data-id="-1">
+              <strong>Campaign Budget: </strong>
+              <span class="bounty-balance"></span>
+              <span> ETH</span>
+            </p>
+            <div class="text-center">
+              <div class="btn-group" data-id="-1">
+                <button type="button" class="btn btn-sm btn-outline-success btn-contribute"
+                  data-id="-1">Contribute</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-fulfillment" data-id="-1">Edit reward
+                  per share</button>
+                <button type="button" class="btn btn-sm btn-outline-danger btn-close" data-id="-1">Close</button>
+              </div>
+              <div class="collapse modify-bounty-container" data-id="-1">
+                <br />
+                <div class="input-group">
+                  <input type="text" class="form-control modify-bounty-input"style="margin-left:15px;" value=".1" data-id="-1">
+                  <div class="input-group-append">
+                    <span class="input-group-text">ETH</span>
+                    <button type="button" class="btn btn-outline-secondary modify-bounty-button" data-id="-1">></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="text-muted">
+
+    <a href="#" style="color: white;padding-bottom: 30px; float:right; padding-right: 80px;">Back to top</a>
+
+    <div class="container">
+      <p style="text-align: center;">@ TopicShare.io. All rights reserved</p>
+    </div>
+
+  </footer>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed  -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

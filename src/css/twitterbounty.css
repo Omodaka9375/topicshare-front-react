@@ -1,0 +1,339 @@
+:root {
+  --jumbotron-padding-y: 4rem;
+}
+
+html{
+background-color: #343a40 ;
+}
+
+.h5 logo-image {
+  padding:0px;
+  margin-bottom:10px;
+  line-height:0;
+}
+
+.jumbotron {
+  padding-top:5rem;
+  padding-bottom: var(--jumbotron-padding-y);
+  margin-bottom: 0;
+  background-color: #CFD5DD;
+}
+@media (min-width: 768px) {
+  .jumbotron {
+    background-image: url("../img/7063.jpg");
+  }
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+footer {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: #343a40;
+  color: gray;
+}
+
+footer p {
+  margin-bottom: .25rem;
+}
+
+.btn-outline-primary {
+  color: #495057;
+  background-color: #e9ecef;
+  background-image: none;
+  border-color: #95959580;
+}
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.logo-image {
+  padding-right: 10px;
+}
+
+h4 {
+  font-size: 1.3rem;
+}
+.card-header {
+  background-color: rgba(57, 53, 110, 0.85);
+  color:white;
+  border: 0px;
+  border-radius: calc(.9rem - 1px) calc(.9rem - 1px) 0 0;
+  padding-top: 16px;
+}
+.card-header:first-child {
+
+  border-radius: calc(.9rem - 1px) calc(.9rem - 1px) 0 0;
+}
+/*Quotes CSS*/
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,200italic);
+
+.quote-card {
+  background: #fff;
+  color: #222222;
+  padding: 20px;
+  padding-left: 50px;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(34, 34, 34, 0.12);
+  position: relative;
+  overflow: hidden;
+  min-height: 50px;
+}
+.quote-card p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 80%;
+}
+.quote-card cite {
+  font-size: 16px;
+  margin-top: 10px;
+  display: block;
+  font-weight: 200;
+  opacity: 0.8;
+}
+.quote-card:before {
+  font-family: Georgia, serif;
+  content: "“";
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 5em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+.quote-card:after {
+  font-family: Georgia, serif;
+  content: "”";
+  position: absolute;
+  bottom: -110px;
+  line-height: 100px;
+  right: -32px;
+  font-size: 25em;
+  color: rgba(238, 238, 238, 0.8);
+  font-weight: normal;
+}
+
+.quote-card-small {
+  padding: 20px;
+}
+.quote-card-small p {
+  max-width: 100%;
+  text-align: center;
+}
+
+.quote-card-small:before {
+  top: -10px;
+  left: 10px;
+  font-size: 3em;
+}
+
+.quote-card-small:after {
+  bottom: -50px;
+  right: 10px;
+  font-size: 3em;
+}
+
+
+.grey-card {
+  background: rgb(86, 83, 132);
+  color: #ffffff;
+}
+
+.card-subtitle {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 1px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  padding-top: 3px;
+  padding-right: 10px;
+}
+
+.card-body {
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  .card-columns {
+      column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-columns {
+      column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-columns {
+      column-count: 3;
+  }
+}
+
+.bg-light {
+  background-color: #0000001a !important;
+}
+.navbar {
+  padding: 10;
+}
+#submit-oracle {
+background-color: #565384;
+color: white;
+}
+.input-group > .input-group-prepend > .input-group-text {
+background-color: #565384;
+color: white;
+}
+
+.alert-danger {
+  color: white;
+  border-color: #b0b0b0;
+  font-size: large;
+  background-color: #f0325a;
+}
+
+.bounty-topic {
+
+  float: right;
+  background-color:#d23254;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 3px;
+  padding-bottom: 4px;
+  border-radius: 5px;
+
+}
+
+.filter-menu{
+  width:100%;
+  display:inline-block;
+  min-height:50px;
+  background-color: #343a40 !important;
+  color: white;
+  padding-left:50px;
+  padding-top:13px;
+}
+
+.filter-menu p{
+margin:0;
+
+ }
+
+ #topic-input{
+   width:100px;
+ }
+
+ .fulfill-twitter-bounty{
+   color:white;
+   background-color: #565384;
+ }
+
+ #fulfillment-amount-input{
+   min-width:60px;
+   text-align: right;
+   max-height:50px;
+ }
+ #initial-balance-input{
+  min-width:60px;
+  text-align: right;
+  max-height:50px;
+ }
+
+ #submit-twitter-bounty{
+  background-color: #565384;
+  color: white;
+  min-width: 612px;
+
+ }
+
+#fulfillment-followers-input {
+  margin-left: 10px;
+}
+
+.input-group {
+padding-top: 10px;
+}
+
+.fulfillment-followers-group{
+  padding-left:15px;
+  padding-right:10px;
+}
+
+.fulfillment-amount-group{
+  padding-left:10px;
+  padding-right:10px;
+  border-radius: 5px;
+}
+.bounty-balance-group {
+  padding-left:15px;
+  padding-right:10px;
+}
+
+.card{
+  padding-bottom: 10px;
+}
+
+#followers-dropdown{
+  min-width: 100px;
+}
+
+.modify-bounty-input{
+  text-align: right;
+}
+
+.list-unstyled {
+
+  list-style: none;
+  text-align: right;
+}
+
+.navbar-dark .navbar-toggler{
+  border:none;
+  outline: none;
+}
+
+.alert-secondary {
+  color: #155724;
+  background-color:greenyellow;
+  border-color: #c3e6cb;
+  font-size: large;
+}
+
+.tutorial {
+  width: 100%;
+  height: auto;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.modify-bounty-button.btn-outline-success {
+margin-right: 15px;
+}
+
+.btn-outline-secondary.modify-bounty-button {
+  margin-right: 15px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: .5rem;
+}
+
+.bounty-claims {
+  margin-top: 23px;
+font-size: larger;
+}
